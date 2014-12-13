@@ -1,13 +1,17 @@
 {
-  "name": "reddsight-api",
-  "description": "An open-source Reddcoin blockchain API. The Reddsight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
+  "name": "cannasight-api",
+  "description": "An open-source Cannacoin blockchain API. The Cannasight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
   "version": "0.2.12",
   "author": {
-    "name": "Larry Ren",
-    "email": "ren@reddcoin.com"
+    "name": "Josh Dellay",
+    "email": "josh@cannacoin.cc"
   },
-  "repository": "git://github.com/reddcoin-project/reddsight-api.git",
+  "repository": "git://github.com/cannacoin-project/cannasight-api.git",
   "contributors": [
+    {
+      "name": "Larry Ren",
+      "email": "ren@reddcoin.com"
+    },
     {
       "name": "Andrew Groff",
       "email": "andrew@reddcoin.com"
@@ -42,16 +46,16 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/reddcoin-project/reddsight-api/issues"
+    "url": "https://github.com/cannacoin-project/cannasight-api/issues"
   },
-  "homepage": "https://github.com/reddcoin-project/reddsight-api",
+  "homepage": "https://github.com/cannacoin-project/cannasight-api",
   "license": "MIT",
   "keywords": [
-    "reddcoin",
-    "reddcore",
-    "reddsight",
-    "reddsight api",
-    "reddcoin api",
+    "cannacoin",
+    "cannacore",
+    "cannasight",
+    "cannasight api",
+    "cannacoin api",
     "insight",
     "insight api",
     "blockchain",
@@ -72,7 +76,7 @@
     "base58-native": "0.1.2",
     "bignum": "*",
     "bitauth": "^0.1.1",
-    "reddcore": "git://github.com/reddcoin-project/reddcore.git",
+    "cannacore": "git://github.com/cannacoin-project/cannacore.git",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",

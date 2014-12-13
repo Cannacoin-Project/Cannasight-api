@@ -19,20 +19,20 @@ function getUserHome() {
   return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var home = process.env.INSIGHT_DB || (getUserHome() + '/.reddsight');
+var home = process.env.INSIGHT_DB || (getUserHome() + '/.cannasight');
 
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '45443';
-  p2p_port = '45444';
+  b_port = '7142';
+  p2p_port = '7143';
 } else {
   env = 'testnet';
   db = home + '/testnet';
   port = '3001';
-  b_port = '55443';
-  p2p_port = '55444';
+  b_port = '17142';
+  p2p_port = '17143';
 }
 port = parseInt(process.env.INSIGHT_PORT) || port;
 
@@ -56,9 +56,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\Reddcoin\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Reddcoin/';
-  if (isLinux) dataDir = process.env.HOME + '/.reddcoin/';
+  if (isWin) dataDir = '%APPDATA%\\cannacoin\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/cannacoin/';
+  if (isLinux) dataDir = process.env.HOME + '/.cannacoin/';
 }
 dataDir += network === 'testnet' ? 'testnet' : '';
 
