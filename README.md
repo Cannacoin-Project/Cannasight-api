@@ -352,7 +352,7 @@ html
 ```
 <html>
 <body>
-  <script src="http://live.cannacoin.cc/socket.io/socket.io.js"></script>
+  <script src="http://explorer.cannapay.io/socket.io/socket.io.js"></script>
   <script>
     eventToListenTo = 'tx'
     room = 'inv'
